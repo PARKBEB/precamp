@@ -1,0 +1,56 @@
+h2 {
+    color: #0068FF;
+}
+
+input {
+    font-size: 16px;
+}
+
+p {
+    padding: 21px 0 56px 0;
+    margin: 0;
+}
+
+.user {
+    border: 0;
+    border-bottom: 1px solid gray;
+    outline: none;
+    width : 466px;
+}
+
+.user:focus {
+    border-bottom-color: blue;
+}
+
+.radio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-in {
+    width: 670px;
+    height: 960px;
+    border: 1px solid #AACDFF;
+    border-radius: 20px;
+    box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+    box-sizing: border-box;
+    padding: 70px 100px 70px 100px;
+}
+
+.info {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 470px;
+    height: 75px;
+    border-radius: 10px;
+    border: 1px solid #0068FF;
+    color: #0068FF;
+    font-size: 18px;
+}
