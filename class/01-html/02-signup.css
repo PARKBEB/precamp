@@ -1,5 +1,10 @@
 h2 {
     color: #0068FF;
+    font-weight: 700;
+    font-family: Noto Sans CJK KR;
+    font-size: 32px; 
+    padding-bottom: 39px;
+    margin: 0;
 }
 
 input {
@@ -7,7 +12,7 @@ input {
 }
 
 p {
-    padding: 21px 0 56px 0;
+    padding: 21px 0 34.35px 0;
     margin: 0;
 }
 
@@ -26,6 +31,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 50px 0 50.05px 0;
+    margin: 0;
+}
+
+.radio-container span {
+    padding-right: 30px;
 }
 
 .info-in {
@@ -39,11 +50,16 @@ p {
 }
 
 .info {
+    height: 1280px;
     display: flex;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.chk_agree {
+    font-size: 14px;
+    padding-bottom: 61px;
 }
 
 button {
