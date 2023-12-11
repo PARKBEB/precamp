@@ -14,3 +14,4 @@ const send = () => {
     // const random__color = (Math.floor(Math.random() * 0xffffff)).toString(16) // 0x000000 ~ 0xffffff
     // document.getElementById("num").style.color = "#" + random__color
 }
+
