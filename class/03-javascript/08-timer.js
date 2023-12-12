@@ -21,23 +21,24 @@
 //     }
 // },1000)
 
+// 인증 번호 생성
 let time = 180
 
 let interval
 
 function send() {
-    if (interval) {
+    if (interval) {  
         clearInterval(interval);
         time = 180
     }
 
-    let token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")
-    document.getElementById("target").innerText = token
-    document.getElementById("target").style.color = "#" + token
+    let token = String(Math.floor(Math.random() * 1000000)).padStart(6, "0")  
+    document.getElementById("target").innerText = token  // 인증 번호 생성
+    document.getElementById("target").style.color = "#" + token  // 인증 번호 색깔 변경
 
     document.getElementById("btn").disabled = false
 
-    interval = setInterval(function() {
+    interval = setInterval(function() {  // 1초 마다 -1초 차감
         if (time >= 0) {
             let min = String(Math.floor(time / 60))
             let sec = String(time % 60).padStart(2, "0")
@@ -51,6 +52,7 @@ function send() {
     },1000)
 }
 
+// 인증 완료
 function complete() {
     time = 0
     document.getElementById("time").innerText = "0 : 00"
