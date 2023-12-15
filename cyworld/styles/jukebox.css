@@ -14,20 +14,16 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    padding: 20px 30px;
-}
-
-.wrapper__header {
-    width: 100%;
-    padding-bottom: 10px;
+    padding: 20px 46px 46px 29px;
 }
 
 .header__title {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 8px;
 }
 
 .title {
@@ -41,41 +37,79 @@ html, body {
     padding-left: 5px;
 }
 
-.divideLine {
+.deadline {
     width: 100%;
-    border-top: solid 1px gray;
+    border-top: 1px solid gray;
+    padding-bottom: 20px;
 }
 
-.wrapper__top {
+.album__top {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 5px;
 }
 
-.wrapper__body__bottom {
-    width: 100%;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+.album__top__title {
+    color: #0F465E;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
 }
 
-.album th {
-    border-top: solid 1px gray;
-    border-bottom: dashed 1px gray;
+.album__top__artist {
     color: #999;
     font-size: 10px;
     font-weight: 700;
+    text-align: center;
 }
 
-.album td {
-    border-bottom: dashed 1px black;
+.wrapper__bottom {
+    padding-top: 30px;
+}
+
+.album__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.album__table th{
+    height: 20px;
+    color: #999;
+    font-size: 10px;
+    font-weight: 700;
+    border-top: 1px solid gray;
+    border-bottom: 1px dashed gray;
+}
+
+.album__table td{
+    height: 20px;
     color: #0F465E;
     font-size: 10px;
     font-weight: 400;
-    }
+    border-bottom: 1px dashed gray;
+}
 
-.num {
+.album__chk {
     text-align: center;
+}
+
+.album__no {
+    text-align: center;
+}
+
+.album__title {
+    text-align: left;
+}
+
+.album__artist {
+    text-align: left;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    vertical-align: middle;
+    width: 9px;
+    height: 9px;
 }
