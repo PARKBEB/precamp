@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.wrapper__info {
+    width: 540px;
+    height: 960px;
+    padding: 53px 78px;
+    border-radius: 20px;
+    border: 1px solid #6fa5f0;
+    background: #FFF;
+    box-shadow: 7px 7px 39px 0px rgba(0, 104, 255, 0.25);
+}
+
+.wrapper__info__insert {
+    padding-top: 60px;
+}
+
+h2 {
+    color: #0068FF;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.user {
+    padding-bottom: 20px; 
+}
+
+.wrapper__info__insert input[type="text"] {
+    width: 380px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #D2D2D2;
+    background: #FFF;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #797979;
+}
+
+.wrapper__info__insert input:focus {
+    border-color:#0982f0;
+    outline: none;
+}
+
+.phone {
+    width: 115px;
+    height: 40px;
+    border: 1px solid #D2D2D2;
+}
+
+select {
+    width: 380px;
+    height: 60px;
+    border-radius: 7px;
+    border: 1px solid #D2D2D2;
+    background: #FFF;
+    color: #797979;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.select__box {
+    padding-bottom: 30px;
+}
+
+select {
+    padding-left: 10px; 
+}
+
+.radio__box {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.target__send {
+    /*color: #0068FF;*/
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.target__complete {
+    padding-bottom: 51px;
+    /*color: #0068FF;*/
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+#send__btn {
+    width: 120px;
+    height: 40px;
+    /* color: #0068FF;*/
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+#complete__btn {
+    width: 120px;
+    height: 40px;
+    /* background-color: #0068FF;
+    color: white; */
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+#submit__btn {
+    width: 380px;
+    height: 75px;
+    border-radius: 10px;
+    background: #FFF;
+    border: 1px solid #b4b0b0;
+    color: #b4b0b0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}

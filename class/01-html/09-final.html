@@ -3,9 +3,53 @@
 <head>
     <title>final</title>
     <script src="../03-javascript/09-final.js"></script>
-    <link href="../02-css/09-final.css" rel="stylesheet">
+    <link href="../02-css/09-fianl.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="wrapper__info">
+            <h2>코드캠프 회원가입</h2>
+            <div class="wrapper__info__insert">
+                <div class="user">
+                    <input type="text" id="email" placeholder="이메일을 입력해 주세요">  
+                </div>
+                <div class="user">
+                    <input type="text" id="name" placeholder="이름을 입력해 주세요"> 
+                </div>
+                <div class="user">
+                    <input type="text" id="pw1" placeholder="비밀번호를 입력해 주세요"> 
+                </div>
+                <div class="user">
+                    <input type="text" id="pw2" placeholder="비밀번호를 다시 입력해 주세요"> 
+                </div>
+            </div>
+                <div class="select__box">
+                    <input type="text" class="phone" id="phone1" maxlength="3"> -
+                    <input type="text" class="phone" id="phone2" maxlength="4"> -
+                    <input type="text" class="phone" id="phone3" maxlength="4"> 
+                </div>
+                <div class="user">
+                    <select>
+                        <option disabled="true" selected="true">지역을 선택하세요</option>
+                        <option>서울</option>
+                        <option>경기</option>
+                        <option>인천</option>
+                    </select>
+                </div>
+                <div class="radio__box">
+                    <input type="radio" class="m" name="gender">여성
+                    <input type="radio" class="f" name="gender">남성
+                </div>
+                <div class="target__send">
+                    <span>000000</span>
+                    <button onclick="send()" id="send__btn" disabled="true">인증번호 전송</button>
+                </div>
+                <div class="target__complete">
+                    <span id="time">3 : 00</span>
+                    <button onclick="complete()" id="complete__btn" disabled="true">인증완료</button>
+                </div>
+            <button onclick="submit()" id="submit__btn">가입하기</button>
+        </div>
+    </div>
 </body>
 </html>
