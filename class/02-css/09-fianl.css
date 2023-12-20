@@ -38,7 +38,7 @@ h2 {
 }
 
 .user {
-    padding-bottom: 20px; 
+    padding-bottom: 10px; 
 }
 
 .wrapper__info__insert input[type="text"] {
@@ -76,7 +76,7 @@ select {
 }
 
 .select__box {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 select {
@@ -84,7 +84,7 @@ select {
 }
 
 .radio__box {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     text-align: center;
 }
 
@@ -96,7 +96,7 @@ select {
 }
 
 .target__complete {
-    padding-bottom: 51px;
+    padding-bottom: 41px;
     /*color: #0068FF;*/
     text-align: right;
     font-size: 18px;
@@ -135,4 +135,17 @@ select {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
+}
+
+.issue {
+    visibility: hidden;
+    color: red;
+    font-size: 10px;
+    padding-left: 30%;
+}
+
+.gender__issue {
+    visibility: hidden;
+    color: red;
+    font-size: 10px;
 }
