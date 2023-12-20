@@ -88,42 +88,22 @@ function send() {
         let name = document.getElementById("name").value
         let pw1 = document.getElementById("pw1").value
         let pw2 = document.getElementById("pw2").value
-        let region = document.getElementById("region").value
-        let gender = document.querySelector('input[name="gender"]:checked');
+        let region = document.getElementById("region").value  // select
+        let gender = document.querySelector('input[name="gender"]:checked');  // radio
 
-        if (email !== "" && email.includes("@")) {
-            document.getElementById("email__issue").style = "visibility:  hidden;"
-        } else {
+        if (!email.includes("@")) {
             document.getElementById("email__issue").style = "visibility:  visible;"
-        }
-
-        if (name !== "") {
-            document.getElementById("name__issue").style = "visibility:  hidden;"
-        } else {
+        } if (name === "") {
             document.getElementById("name__issue").style = "visibility:  visible;"
-        }
-
-        if (pw1 !== "") {
-            document.getElementById("pw1__issue").style = "visibility:  hidden;"
-        } else {
+        } if (pw1 === "") {
             document.getElementById("pw1__issue").style = "visibility:  visible;"
-        }
-
-        if (pw2 !== "" && pw1 === pw2) {
-            document.getElementById("pw2__issue").style = "visibility:  hidden;"
-        } else {
+        } if (pw1 !== pw2) {
             document.getElementById("pw2__issue").style = "visibility:  visible;"
-        }
-
-        if (region !== "") {
-            document.getElementById("select__issue").style = "visibility:  hidden;"
-        } else {
+        } if (region === "") {
             document.getElementById("select__issue").style = "visibility:  visible;"
-        }
-
-        if (gender !== null) {
-            document.getElementById("gender__issue").style = "visibility:  hidden;"
-        } else {
+        } if (gender === null) {
             document.getElementById("gender__issue").style = "visibility:  visible;"
+        } else {
+            alert("회원가입이 완료되었습니다.")
         }
     }
